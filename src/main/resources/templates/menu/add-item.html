@@ -10,7 +10,7 @@
 
 
     <div class="form-group">
-        <label th:for="cheeseId">Cheese</label>
+        <label th:for="cheeseId">Cheese: </label>
         <select th:field="*{cheeseId}">
             <option th:each="cheese : *{cheeses}"
                     th:value="${cheese.id}"

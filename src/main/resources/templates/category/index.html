@@ -8,9 +8,18 @@
 
 <nav th:replace="fragments :: navigation"></nav>
 
-<ul th:each="category : ${categories}">
-    <li th:text="${category.name}"></li>
-</ul>
+<table class="table">
+
+    <tr>
+        <th>Name</th>
+    </tr>
+
+    <tr th:each="category : ${categories}">
+        <td th:text="${category.name}"></td>
+    </tr>
+
+</table>
+
 
 <a href="/category/add">Add Category</a>
 

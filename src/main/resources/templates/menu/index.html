@@ -18,6 +18,7 @@
 
     <tr th:each="menu : ${menus}">
         <td><a th:href="@{'/menu/view/' + ${menu.id}}" th:text="${menu.name}"></a></td>
+        <td th:text="${menu.cheeses.size()}"></td>
     </tr>
 
 </table>
